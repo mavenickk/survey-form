@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div id="container">
+            <header>
+                <h1 id="title">Aerospace education survey  form</h1>
+                <p id="descripion">thanks for filling this form</p>
+            </header>
+            <form id="survey-form">
+                <div class="form-group">
+                    <label id="name-label" for="name">Name</label><br>
+                    <input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+                </div>
+                <div class="form-group">
+                    <label id="email-label" for="email">Email</label><br>
+                    <input type="email" name="email" id="emial" class="form-control" placeholder="johnwick@gmail.com" required="">
+                </div>
+                <div class="form-group">
+                    <label id="number-label" for="number">Number</label><br>
+                    <input type="number" name="number" id="number" class="form-control" placeholder="1-99" required="" min="0" max="99">
+                </div>
+                <div class="form-group">
+                    <p>How much you are interested in aerospace:</p>
+                    <label>
+                        <input name="user-recommend" value="much" type="radio" class="input-radio" checked="">Interested a lot</label><br>
+                    <label>
+                        <input name="user-recommend" value="average" type="radio" class="input-radio">Averagely interested</label><br>
+                    <label>
+                        <input name="user-recommend" value="less" type="radio" class="input-radio">Not interested</label><br>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="structures">Your favourite type of aerial structure:</label><br>
+
+                    <select name="structures" id="structures">
+                        <option disabled selected value>Select an option</option>
+                        <option value="Helicopter">Helicopter</option>
+                        <option value="Fighter">Fighter</option>
+                        <option value="Rocket">Rocket</option>
+                        <option value="Cars">Flying cars</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <p>
+                        What would you like to see improved?
+                        <span class="clue">(Check all that apply)</span>
+                    </p>
+                    <label>
+                        <input name="prefer" value="Online-trainings" type="checkbox" class="input-checkbox">Online trainings</label><br>
+                    <label>
+                        <input name="prefer" value="offline-trainings" type="checkbox" class="input-checkbox">offline trainings</label><br>
+                    <label>
+                        <input name="prefer" value="Internship-opportunities" type="checkbox" class="input-checkbox">Internship opportunities</label><br>
+                    <label>
+                        <input name="prefer" value="Research-and-development" type="checkbox" class="input-checkbox">Research and development</label><br>
+                    <label>
+                        <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">Open Source Community</label><br>
+                    <label>
+                        <input name="prefer" value="gitter-help-rooms" type="checkbox" class="input-checkbox">Gitter help rooms</label><br>
+                </div>
+                <div class="form-group">
+                    <p>Any comments or suggestions?</p>
+                    <textarea id="comments" class="input-textarea" name="comment" placeholder="Enter your comment here..."></textarea>
+                </div><br>  
+                <div class="form-group">
+                    <button type="submit" id="submit" class="submit-button">
+                        Submit
+                    </button>
+                </div>
+                
+            </form>
+        </div>
+    </body>
+</html>
+
+
